@@ -1,0 +1,69 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="shortcut icon" href="themes/assets/ico/favicon.ico">
+    <title>Air Pollution</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="themes/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="themes/assets/css/carousel.css" rel="stylesheet">
+
+    <!--register % login CSS-->
+    <link rel="stylesheet" href="css/style.css">
+
+    <script>
+        function autoResize() {
+            document.getElementsByName("view").style.height = view.document.body.scrollHeight;
+        }
+    </script>
+</head>
+<body>
+<?php
+       include("./header.html");
+ ?>
+
+        <div class="login-wrap" style="margin-top:70px; margin-bottom:50px;">
+  <h2>Register</h2>
+
+     <div class="form">
+         <form method="post" action="insert.php">
+             <input type="text" placeholder="E-mail" name=mail required/>
+             <input type="password" placeholder="Password" name=passwd required/>
+             <input type="password" placeholder="Password confirm" name=passwd_confirm required/>
+             <input type="text" placeholder="Name" name="name"  required/>
+             <input type="text" placeholder="Nick Name" name=nick required/>
+             <input type="text" placeholder="Password" name=pass required/>
+             <button type="submit">Log in </button> 
+             <button type="reset" value="reset">Reset</button>
+         </form>
+ 
+     </div>
+
+ </div>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="container">
+            <p class="pull-right"><a href="#">Back to top</a></p>
+            <p>&copy; 2014 Company, Inc. &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
+        </div>
+    </footer>
+
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
+    <script src="themes/dist/js/bootstrap.min.js"></script>
+    <script src="themes/assets/js/holder.js"></script>
+</body>
+</html>
+
